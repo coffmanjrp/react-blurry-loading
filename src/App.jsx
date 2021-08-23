@@ -2,8 +2,9 @@ import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
+    <div>
+      <section className="bg" />
+      <div className="loading-text">0%</div>
     </div>
   );
 }
