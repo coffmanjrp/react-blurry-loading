@@ -4,13 +4,9 @@ import { scale } from './lib/scale';
 import './App.scss';
 
 function App() {
+  const [delay] = useState(30);
   const [load, setLoad] = useState(0);
-  const [delay, setDelay] = useState(0);
   const [isRunning, setIsRunning] = useState(true);
-
-  useEffect(() => {
-    setDelay(30);
-  }, []);
 
   useEffect(() => {
     if (load > 99) {
